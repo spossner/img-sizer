@@ -1,6 +1,15 @@
-# Image Sizer
+# Img-Sizer
 
-A high-performance image resizing service that fetches images from URL or a specified S3 bucket and processes them according to specified parameters.
+[![Go](https://github.com/spossner/img-sizer/actions/workflows/go.yml/badge.svg)](https://github.com/spossner/img-sizer/actions/workflows/go.yml)
+[![Docker](https://github.com/spossner/img-sizer/actions/workflows/docker.yml/badge.svg)](https://github.com/spossner/img-sizer/actions/workflows/docker.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/spossner/img-sizer)](https://goreportcard.com/report/github.com/spossner/img-sizer)
+[![GoDoc](https://godoc.org/github.com/spossner/img-sizer?status.svg)](https://godoc.org/github.com/spossner/img-sizer)
+
+A high-performance image resizing service that fetches images from URL or a specified S3 bucket and processes them according to specified parameters. This helps reducing the internet traffic especially on mobile clients when not the full, original size is needed.
+
+Knowing that there are several tools available out there, this was developed to pull in the original images from S3 directly while matching the existing URL schema, which can not be changed easily because of clients out in the field. 
+Therefore Img-Sizer aims to be a slim, laser sharp solution. 
+See https://imgproxy.net/ et al if you want a much more sophisticated and feature complete version - and especially a cleaner and more modern API, which is not dictated by 8y old predecessor. 
 
 ## Features
 
@@ -31,7 +40,7 @@ The service is configured through json configuration files:
             "bucket": "images-bucket"
         },
         {
-            "pattern": "*.example.com" // fallback to URL for all other URLs from any example.com subdomain
+            "pattern": "*.example.com"
         }
     ],
     "allowed_dimensions": [
