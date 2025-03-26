@@ -1,0 +1,48 @@
+{
+    "allowed_sources": [
+        {
+            "pattern": "test-static.example.com",
+            "bucket": "test-bucket"
+        },
+        {
+            "pattern": "*.example.com"
+        }
+    ],
+    "allowed_dimensions": [
+        {
+            "width": 100,
+            "height": 100
+        },
+        {
+            "width": 200,
+            "height": 200
+        },
+        {
+            "width": 300,
+            "height": 300
+        },
+        {
+            "width": 400,
+            "height": 300
+        },
+        {
+            "width": 800,
+            "height": 600
+        },
+        {
+            "width": 1024,
+            "height": 768
+        }
+    ],
+    "allow_all_dimensions": true,
+    "max_input_dimension": 16384,
+    "max_output_dimension": 4096,
+    "jpeg": {
+        "background": "000000",
+        "quality": 70
+    },
+    "rate_limit": {
+        "max_requests": 300,
+        "window": "1m"
+    }
+}
