@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
-	"img-sizer/internal/config"
-	"img-sizer/internal/handlers"
-	"img-sizer/internal/storage"
-	"img-sizer/internal/utils"
+	"github.com/spossner/img-sizer/internal/config"
+	"github.com/spossner/img-sizer/internal/handlers"
+	"github.com/spossner/img-sizer/internal/storage"
+	"github.com/spossner/img-sizer/internal/utils"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/limiter"

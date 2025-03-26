@@ -6,12 +6,12 @@ import (
 	"image/jpeg"
 	"net/http"
 
-	"img-sizer/internal/config"
-	"img-sizer/internal/handlers/helpers"
-	"img-sizer/internal/processing"
-	"img-sizer/internal/storage"
-	"img-sizer/internal/utils"
-	"img-sizer/internal/validators"
+	"github.com/spossner/img-sizer/internal/config"
+	"github.com/spossner/img-sizer/internal/handlers/helpers"
+	"github.com/spossner/img-sizer/internal/processing"
+	"github.com/spossner/img-sizer/internal/storage"
+	"github.com/spossner/img-sizer/internal/utils"
+	"github.com/spossner/img-sizer/internal/validators"
 
 	"github.com/disintegration/imaging"
 	"github.com/gofiber/fiber/v2"

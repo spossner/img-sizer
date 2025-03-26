@@ -2,9 +2,10 @@ package validators
 
 import (
 	"image"
-	"img-sizer/internal/config"
 	"log/slog"
 	"testing"
+
+	"github.com/spossner/img-sizer/internal/config"
 )
 
 func TestIsAllowedDimension(t *testing.T) {

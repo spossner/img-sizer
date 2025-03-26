@@ -4,7 +4,7 @@ import (
 	"image"
 	"testing"
 
-	"img-sizer/internal/config"
+	"github.com/spossner/img-sizer/internal/config"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/valyala/fasthttp"

@@ -3,10 +3,11 @@ package helpers
 import (
 	"context"
 	"image"
-	"img-sizer/internal/config"
-	"img-sizer/internal/storage"
 	"net/url"
 	"strings"
+
+	"github.com/spossner/img-sizer/internal/config"
+	"github.com/spossner/img-sizer/internal/storage"
 
 	"github.com/disintegration/imaging"
 )

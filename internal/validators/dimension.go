@@ -3,7 +3,8 @@ package validators
 import (
 	"fmt"
 	"image"
-	"img-sizer/internal/config"
+
+	"github.com/spossner/img-sizer/internal/config"
 )
 
 // IsAllowedDimension checks if the given width and height match any of the allowed dimensions

@@ -3,13 +3,14 @@ package config
 import (
 	"encoding/json"
 	"fmt"
-	"img-sizer/internal/utils"
 	"log/slog"
 	"os"
 	"path/filepath"
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/spossner/img-sizer/internal/utils"
 )
 
 type Dimension struct {

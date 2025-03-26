@@ -1,12 +1,13 @@
 # Variables
 APP_NAME=img-sizer
-AWS_REGION=eu-central-1
-DOCKER_REGISTRY=435498299605.dkr.ecr.eu-central-1.amazonaws.com
+AWS_REGION?=eu-central-1
+AWS_ACCOUNT_ID:=$(shell aws sts get-caller-identity --query Account --output text)
+DOCKER_REGISTRY=$(AWS_ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com
 VERSION=$(shell git describe --tags --always --dirty)
 GOOS?=linux
 GOARCH?=amd64
 
-.PHONY: build dev docker-build docker-run docker-push create-ecr clean
+.PHONY: build dev docker-build docker-run docker-push create-ecr deploy clean
 
 # Build the application
 build:

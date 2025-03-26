@@ -2,8 +2,9 @@ package handlers
 
 import (
 	"image"
-	"img-sizer/internal/config"
-	"img-sizer/internal/storage"
+
+	"github.com/spossner/img-sizer/internal/config"
+	"github.com/spossner/img-sizer/internal/storage"
 
 	"github.com/gofiber/fiber/v2"
 )

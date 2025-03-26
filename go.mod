@@ -1,4 +1,4 @@
-module img-sizer
+module github.com/spossner/img-sizer
 
 go 1.24.1
 

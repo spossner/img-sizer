@@ -2,9 +2,10 @@ package handlers
 
 import (
 	"fmt"
-	"img-sizer/internal/config"
-	"img-sizer/internal/storage"
 	"time"
+
+	"github.com/spossner/img-sizer/internal/config"
+	"github.com/spossner/img-sizer/internal/storage"
 
 	"github.com/gofiber/fiber/v2"
 )

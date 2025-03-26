@@ -5,7 +5,8 @@ import (
 	"errors"
 	"image"
 	"image/color"
-	"img-sizer/internal/validators"
+
+	"github.com/spossner/img-sizer/internal/validators"
 
 	"github.com/disintegration/imaging"
 )

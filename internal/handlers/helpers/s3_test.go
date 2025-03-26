@@ -1,10 +1,11 @@
 package helpers
 
 import (
-	"img-sizer/internal/config"
 	"log/slog"
 	"os"
 	"testing"
+
+	"github.com/spossner/img-sizer/internal/config"
 
 	"github.com/stretchr/testify/assert"
 )
