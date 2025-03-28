@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/github/v/release/spossner/img-sizer?include_prereleases&sort=semver)](https://github.com/spossner/img-sizer/releases)
 [![Go](https://github.com/spossner/img-sizer/actions/workflows/go.yml/badge.svg)](https://github.com/spossner/img-sizer/actions/workflows/go.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/spossner/img-sizer)](https://goreportcard.com/report/github.com/spossner/img-sizer)
-![Docker Build](https://github.com/spossner/YOUR_REPOimg-sizer/workflows/docker-build.yml/badge.svg)
+![Docker Build](https://github.com/spossner/img-sizer/actions/workflows/docker-build.yml/badge.svg)
 
 
 A high-performance image resizing service that fetches images from URL or a specified S3 bucket and processes them according to specified parameters. This helps reducing the internet traffic especially on mobile clients when not the full, original size is needed.
