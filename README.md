@@ -77,8 +77,8 @@ The service is configured through json configuration files:
 }
 ```
 
-The `allowed_sources` configuration maps URL patterns to their corresponding S3 bucket names. This allows you to use production URLs while the service automatically maps them to the correct S3 buckets. The rules are processed and evaluated oin the order given in configuration.
-The service supports both direct S3 URLs and custom domain URLs. If no bucket is specified, the service will fetch the image data from the source URL.
+The `allowed_sources` configuration maps URL patterns to their corresponding S3 bucket names. This allows you to use production URLs while the service automatically maps them to the correct S3 buckets. The rules are processed and evaluated in the order given in configuration.
+If no bucket is specified, the service will fetch the image data from the source URL.
 
 Multiple config files can be provided in ./config folder follwing the pattern `<app-env>.json`. The desired one is chosen by using the APP_ENV environment variable with fallback to local. The value from APP_ENV is used as `<app-env>`.
 
@@ -108,7 +108,7 @@ APP_ENV=local
 ### HTTP Endpoints
 
 #### 1. Resize Image
-Simple resize of a given image. Deprecated. User /v2/resize.jpg instead.
+Simple resize of a given image. Deprecated. Use /v2/resize.jpg instead.
 
 ```
 GET /resize.jpg?src=<url>&width=<width>&height=<height>&density=<density>&quality=<quality>
